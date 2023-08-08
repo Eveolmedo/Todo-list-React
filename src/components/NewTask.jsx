@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import TaskForm from "./TaskForm"
+import ContentTask from "./ContentTask";
 
 const NewTask = () => {
     const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("task")) || [])
@@ -27,6 +28,7 @@ const NewTask = () => {
     return (
         <>
             <TaskForm handleSubmit={handleSubmit} handleChange={handleChange}/>
+            <ContentTask tasks={tasks}/>
         </>
     )
 }
