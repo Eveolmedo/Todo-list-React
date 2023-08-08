@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-
-const TaskForm = () => {
-    const [task, setTask] = useState("")
-
-    const handleChange = (e) => {
-        setTask(e.target.value)
-    }
-
+const TaskForm = ( {handleSubmit, handleChange} ) => {
+    
     return (
-        <>
-            <form>
-                <input
-                    type="text" 
-                    placeholder="Ingrese una tarea" 
-                    onChange={handleChange}
-                />
-                <input type="submit" value="Send"></input>
-            </form>
-        </>
+        <form onSubmit={handleSubmit}>
+            <input
+                type="text"
+                placeholder="Ingrese una tarea"
+                onChange={handleChange}>
+            </input>
+            {/* ACA VA EL COMPONENTE SELECT */}
+            <input
+                type="submit"
+                value="Send">
+            </input>
+        </form>
     )
 }
 
