@@ -28,7 +28,7 @@ const NewTask = () => {
     return (
         <>
             <TaskForm handleSubmit={handleSubmit} handleChange={handleChange}/>
-            <ContentTask tasks={tasks}/>
+            <ContentTask tasks={tasks} setTasks={setTasks}/>
         </>
     )
 }

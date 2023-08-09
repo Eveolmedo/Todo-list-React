@@ -1,9 +1,19 @@
-const Task = ({ task }) => {
+import React, { useState } from "react";
+const Task = ({ task:{ task, id }, tasks, setTasks}) => {
+    
+    const deleteTask = () => {
+        const updatedTasks = tasks.filter((task) => task.id !== id)
+        localStorage.setItem("task", JSON.stringify(updatedTasks))
+        setTasks(updatedTasks)
+    }
+
+
+
     return (
         <li>
-            <p>{task.task} </p>
+            <p>{task} </p>
             <button>check</button>
-            <button>delete</button>
+            <button onClick={deleteTask}>delete</button>
         </li>
     )
 }
