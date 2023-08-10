@@ -7,6 +7,7 @@ const ContentTask = ({ tasks, setTasks }) => {
                     tasks={tasks}
                     setTasks={setTasks}
                     task={task}
+                    completed={task.completed}
                     key={task.id}
                 />   
             })
