@@ -15,13 +15,13 @@ const TaskForm = ( { handleSubmit, handleChange, handleFilterChange, task } ) =>
 
     return (
         <form onSubmit={handleSubmit} className="flex flex-col items-center md:flex-row flex-wrap justify-center">
-            <fieldset className="w-full flex justify-center">
-                <fieldset className="flex flex-col w-4/5 md:w-2/5 mr-16">
+            <fieldset className="w-4/5 flex flex-col items-center md:w-full md:flex-row justify-center md:items-baseline">
+                <fieldset className="flex flex-col w-4/5 md:w-2/5 md:mr-16">
                     <input
                         type="text"
                         placeholder="Ingrese una tarea"
                         onChange={handleChange}
-                        className="p-2 rounded md:h-12"
+                        className="p-3 rounded md:h-12"
                         onFocus={handleFocus}
                         onBlur={handleBlur}>
                     </input>
