@@ -16,3 +16,4 @@
 ##### Cuenta con una interfaz responsiva, lo que significa que podrás acceder y utilizar la aplicación tanto en computadoras de escritorio como en tablets y celulares.
 
 <img src = "./src/assets/Captura2.PNG" width = 200px>
+
