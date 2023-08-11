@@ -36,7 +36,7 @@ const TaskForm = ( { handleSubmit, handleChange, handleFilterChange, task } ) =>
             <input
                 type="submit"
                 value="Send"
-                className="p-3 my-5 bg-[#69585F] text-white rounded md:w-48">
+                className={`p-3 my-5 bg-[#69585F] text-white rounded md:w-48 ${!errorMessage ? '' : 'opacity-50 cursor-not-allowed'}`}>
             </input>
         </form>
     )
