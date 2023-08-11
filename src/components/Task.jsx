@@ -15,10 +15,10 @@ const Task = ({ task:{ task, id, completed }, tasks, setTasks, checkTask}) => {
     }
     
     return (
-        <li className="flex justify-around aling-center w-1/2 bg-white mb-2">
-            <p className={`text-3xl flex-1 p-2 ${completed ? "line-through text-gray-500" : ""}`}>{task} </p>
-            <button className={`p-5 text-xl ${completed ? "bg-gray-600 text-white": "bg-[#ADF1D2]"}`} onClick={filterTask}><FaCheck /></button>
-            <button className="p-5 text-xl text-white bg-[#69585F]" onClick={deleteTask}><FaTrash /></button>
+        <li className="flex justify-around aling-center w-4/5 bg-white mb-3 md:w-1/2">
+            <p className={`text-2xl flex-1 p-2 ${completed ? "line-through text-gray-500" : ""}`}>{task} </p>
+            <button className={`p-5 ${completed ? "bg-gray-600 text-white": "bg-[#ADF1D2]"}`} onClick={filterTask}><FaCheck /></button>
+            <button className="p-5 text-white bg-[#69585F]" onClick={deleteTask}><FaTrash /></button>
         </li>
     )
 }

@@ -1,7 +1,7 @@
 import Task from "./Task";
 const ContentTask = ({ tasks, setTasks, checkTask }) => {
     return (
-        <ul className="flex flex-col items-center">
+        <ul className="flex flex-col items-center w-full mt-8">
             {tasks.map((task) => {
                 return <Task
                     tasks={tasks}
